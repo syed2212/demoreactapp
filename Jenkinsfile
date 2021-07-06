@@ -5,9 +5,10 @@ pipeline {
         stage("Build") {
             steps {
                 nodejs('Node LTS') {
-                    sh "sudo node -v"
-                    sh "sudo npm -v"
+                    sh 'npm install'
+                    sh 'npm run build'
                 }
+               
             }
         }
     }
