@@ -7,6 +7,7 @@ pipeline {
                 nodejs('Node LTS') {
                     sh 'npm install'
                     sh 'npm run build'
+                    sh 'ls'
                 }
                
             }
